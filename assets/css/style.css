@@ -1,30 +1,37 @@
 html, body{
     overflow-x: hidden;
+  
 }
+
+
 header .heardertoprightbgcls{
-    padding: 0;
+    padding: 0 40px;
     color:#360b62;
     width:100%;
     background:#fff;
-    position:fixed;
+   position: fixed;
     left:0;
     top:0;
     z-index:99999999!important;
- 
+    box-shadow: 2px 3px 19px 3px rgb(0 0 0 / 5%);
+    -webkit-box-shadow: 2px 3px 19px 3px rgb(0 0 0 / 5%);
+    -moz-box-shadow: 2px 3px 19px 3px rgba(0,0,0,.05);
 }
 
 header .heardertoprightbgcls .container{
-    max-width:100%;
-    padding:0;
+  width: 80%;
 }
 header .heardertoprightbgcls nav.navbar{
-    padding:0;
+    padding: 0 !important;
 }
+
+
 header .navbar-nav .nav-link{
     line-height:22px;
     font-size:14px;
     font-weight:500;
     color:#360b62;
+
 }
 header .navbar-nav li.nav-item{
     margin-left:15px;
@@ -40,7 +47,7 @@ header.heardertoprightbgcls .headersticky{
     height:42px;
     border:1px solid #360b62;
     font-size:14px;
-    
+
     border-radius:25px;
     display:inline-block;
     text-align:center;
@@ -74,11 +81,19 @@ li.nav-item.dropdown:hover .dropdown-menu{
     margin-top:-15px;
 }
 header.heardertoprightbgcls{
-    
+  margin-top: 80px;
+  background-color: #fff;
     padding-right:5px;
 }
 header .navbar-brand img{
     width:100px;
+}
+header nav{
+    box-shadow: 2px 3px 19px 3px rgb(0 0 0 / 5%);
+    -webkit-box-shadow: 2px 3px 19px 3px rgb(0 0 0 / 5%);
+    -moz-box-shadow: 2px 3px 19px 3px rgba(0,0,0,.05);
+    padding: 10px 60px !important;
+    background-color: #fff;
 }
 header.heardertoprightbgcls .navbar-toggler{
     border-radius:0;
@@ -116,10 +131,10 @@ header.heardertoprightbgcls .navbar-toggler .navbar-toggler-icon{
         -o-transition:.3s ease-in-out;
         transition:.3s ease-in-out;
     }
-    header.heardertoprightbgcls .navbar-toggler[aria-expanded=true] 
-    .navbar-toggler-icon::after,header.heardertoprightbgcls .navbar-toggler[aria-expanded=true] 
-    .navbar-toggler-icon::before{width:15px}header.heardertoprightbgcls 
-    .navbar-toggler[aria-expanded=true] 
+    header.heardertoprightbgcls .navbar-toggler[aria-expanded=true]
+    .navbar-toggler-icon::after,header.heardertoprightbgcls .navbar-toggler[aria-expanded=true]
+    .navbar-toggler-icon::before{width:15px}header.heardertoprightbgcls
+    .navbar-toggler[aria-expanded=true]
     .navbar-toggler-icon::before{
         top:8px;
         -webkit-transform:rotate(-45deg);
@@ -140,6 +155,7 @@ header.heardertoprightbgcls .navbar-toggler .navbar-toggler-icon{
 
 /*hero section*/
 #hero-section{
+    position: relative;
        text-align: right;
         background: linear-gradient(to bottom,rgba(104,220,168,.3),rgba(104,220,168,1)), url(../img/bg-header1.jpg) no-repeat;
          background-size:100%;
@@ -179,7 +195,7 @@ header.heardertoprightbgcls .navbar-toggler .navbar-toggler-icon{
        letter-spacing: 0.9px;
        border-radius:25px;
        margin:0 0 0 22px;
-      
+
 }
 /*hero section end*/
 
@@ -187,6 +203,9 @@ header.heardertoprightbgcls .navbar-toggler .navbar-toggler-icon{
 
 /* collab section */
 #collab{
+    background-image: url(../img/foundationtoolkitbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 40px 0 40px 0;
 }
 #collab h1{
@@ -220,19 +239,51 @@ header.heardertoprightbgcls .navbar-toggler .navbar-toggler-icon{
 
 /*slider start */
 #bigSlider{
+    padding-top: 50px;
     width: 100%;
-    background-color: aliceblue;
+    background-image: url(../img/foundationtoolkitbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 600px;
- 
+
+}
+#bigSlider h4{
+ font-size: 16px;
+ letter-spacing: 1px;
+ font-weight: bold;
+ color: #3917a2;
+ text-transform: uppercase;
+
+}
+#bigSlider h1{
+    font-weight: bold;
+    color: #000;
+   
+   }
+#bigSlider  .box1{
+    padding-top: 45px;
+}
+#bigSlider p{
+    color: #717171;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000;
+    opacity: .6;
+    margin-bottom: 15px;
+    max-width: 80%;
+}
+.mySlides a{
+  color: #360b62;
+  font-size: 14px;
 }
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
-img {vertical-align: middle;}
+/* img {vertical-align: middle;} */
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 1200px;
   position: relative;
   margin: auto;
 }
@@ -262,24 +313,20 @@ img {vertical-align: middle;}
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #fff;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active {
-  background-color: #717171;
+  background-color: #fff;
 }
 
 /* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
@@ -288,3 +335,481 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 /*slider end */
+/* tiny slider*/
+#slider{
+    width: 100%;
+    padding:20px 0;
+    display: flex;
+     justify-content:center; 
+  
+}
+#slider .container{
+width: 100%;
+margin: 0;
+}
+
+.subcontainer{
+width: 100%;
+
+}
+.slide-img{
+width: 100%;
+height: 80px;
+border-radius: 5px;
+background-position: center;
+background-size: cover;
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img1{
+background-image: url(https://img.freepik.com/free-psd/instagram-white-mobile-phone-mockup-with-3d-icons_106244-1787.jpg?w=1060&t=st=1666773896~exp=1666774496~hmac=d8ed8ae1cb615a01770a0114b220c6a161ed9c53c231b70af68d8302e9af24ad);
+}
+.img2{
+background-image: url(https://img.freepik.com/free-psd/instagram-rose-gold-mobile-phone-mockup_106244-1525.jpg?w=1060&t=st=1666773929~exp=1666774529~hmac=89002e3a65a9035798a9373499fcb3c23739c761fd81cc6230b89e0287f5be6c);
+}
+.img3{
+background-image: url( https://img.freepik.com/free-psd/reminder-3d-design-mockup-template_106244-1902.jpg?t=st=1666765001~exp=1666765601~hmac=28aeda8e0cd365b0e47d81d493272466d735f849dd6e5f01f3975e0be6b067fc);
+}
+.img4{
+background-image: url(  https://img.freepik.com/free-psd/social-media-post-mockup-with-back-school-concept_23-2148082630.jpg?w=996&t=st=1666774186~exp=1666774786~hmac=d254f2fda8df3d09ff43cd7f3d936c94bf8a7b585f646fc0edc9516f2f79c9cd);
+}
+.img5{
+background-image: url(https://img.freepik.com/free-psd/city-sign-design-mockup_23-2149061482.jpg?w=1060&t=st=1666774370~exp=1666774970~hmac=04f162da036b189666e01a6707d0a8cc8cd61dbe6b5f1ee34e9134297cd9f65e);
+}
+.img6{
+background-image: url( https://img.freepik.com/free-psd/city-sign-design-mockup_23-2149061500.jpg?w=1060&t=st=1666774401~exp=1666775001~hmac=36d7cb5414de005f431c4634993a8b08e48812c9d82fe06eab120fe8c1a5e2e1);
+}
+.img7{
+background-image: url(https://img.freepik.com/free-vector/creative-coming-soon-teaser-background_23-2148894969.jpg?w=1060&t=st=1666774427~exp=1666775027~hmac=c11fd8646d189b763889f46f05c14b5bf11510ea75bd4b2c3aaf67657ad8d1d3);
+}
+.img8{
+background-image: url( https://img.freepik.com/free-photo/education-day-arrangement-table-with-copy-space_23-2148721266.jpg?w=1380&t=st=1666774447~exp=1666775047~hmac=8fa1374aa06d2a70f59469940fd3161397f186e0753ee0e0b2561a7d31cb3835);
+}
+
+@media (max-width: 1600px){
+.container{
+    width:100%;
+}
+}
+
+/* tiny slider end */
+/*framework */
+#framework{
+    background-color: #000627;
+    padding: 40px 0 10px 0;
+    background-image: url(../img/bg-newmoi.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+
+#framework .Grid_square {
+    background: url(../img/square-grid_bg.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 450px;
+    margin: auto;
+    position: relative;
+}
+#framework h1{
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 45px;
+    color: #fff;
+    margin-bottom: 21px;
+    max-width: 80%;
+}
+#framework p{
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(255,255,255,.6);
+    opacity: .8;
+    margin-bottom: 15px;
+    max-width: 80%;
+}
+#framework .grid-box p{
+    font-size: 12px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.959);
+    opacity: .8;
+    padding-top: 30px;
+    max-width: 100%;
+
+}
+/* framework end */
+/* integration */
+.integration{
+    background-image: url(../img/foundationtoolkitbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#integration h1{
+    font-size: 54px;
+    font-weight: bold;
+    line-height: 65px;
+    color: #000;
+    margin-bottom: 20px;
+}
+#integration h4{
+    font-size: 16px;
+    line-height: 27px;
+    color: #000;
+    font-weight: 500;
+    opacity: .6;
+    
+}
+#integration .container{
+    width: 75%;
+}
+.integrationiconinnerrowcls{
+    margin-top:44px
+}
+.integrationiconinnerrowcls:nth-child(1) span:last-child::before{
+    content:"";
+    border-right:2px dashed #e3e3e3;border-bottom:
+    2px dashed #e3e3e3;width:116px;height:100px;position:absolute;left:0;bottom:-75px}
+    .integrationiconinnerrowcls:nth-child(2) span:first-child::before{
+        content:"";border-left:2px dashed #e3e3e3;border-bottom:2px dashed #e3e3e3;width:116px;
+        height:100px;position:absolute;left:114px;bottom:-70px
+    }
+    .integrationiconinnerrowcls span{
+        float:left;width:calc(100% / 5);text-align:center;position:relative
+    }
+    .integrationiconinnerrowcls span img{
+        position:relative;z-index:2;width:75px;height:75px
+    }
+    .integrationiconinnerrowcls span::after{
+        content:"";position:absolute;right:0;top:36px;z-index:1;border-top:2px dashed #e3e3e3;width:100%
+    }
+    .integrationiconinnerrowcls span:first-child::after{
+        width:50%
+    }
+    .integrationiconinnerrowcls span:last-child::after{
+        width:50%;left:0;right:auto
+    }
+    .integrationiconinnerrowcls:nth-child(2){
+        max-width:914px;margin:0 auto;margin-top:44px
+    }
+    .integrationiconinnerrowcls:nth-child(2) span{
+        width:calc(100% / 4)
+    }
+    .integrationiconinnerrowcls:nth-child(2) span::after{
+        top:28px
+    }
+    .integrationiconinnerrowcls:nth-child(2) span img{
+        width:60px;height:60px
+    }
+    .integrationiconinnerrowcls:nth-child(3){
+        max-width:678px;margin:0 auto;margin-top:44px
+    }
+    .integrationiconinnerrowcls:nth-child(3) span{
+        width:calc(100% / 3)
+    }
+    .integrationiconinnerrowcls:nth-child(3) span::after{
+        top:22px
+    }
+.integrationiconinnerrowcls:nth-child(3) span img{
+    width:47px;
+    height:47px
+}
+
+/* review slider*/
+#reviews{
+    background-image: url(../img/foundationtoolkitbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#reviews .container{
+    padding: 25px;
+}
+#reviews .card{
+    margin: auto;
+    padding-top: 25px;
+    height: 360px;
+    width: 90%;
+    margin-bottom: 50px;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 2px 0 #cdcdcd;
+}
+#reviews .row{
+    margin: 0;
+    padding:25px;
+}
+#reviews .row .col-xl-4{
+    background-color: #573f75;
+    color:  #12c3f4;
+    box-shadow: 4px 4px 5px #cdcdcd;
+    border: 1px solid #fff;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    height: 250px;
+     padding-top: 20px 25px 25px 15px;
+     margin-bottom: 20px;
+}
+#reviews .card-slider{
+    margin: 0 25px;
+}
+#reviews .row .col-xl-4 p:nth-of-type(1){
+  width: 70%;
+  text-align: center;
+}
+#reviews .col-xl-8 p:nth-last-of-type(1){
+    color:#000627;
+}
+#reviews h5 span{
+    font-size: 15px;
+    color: #573f75;
+    font-weight: bold;
+
+}
+#reviews h5 {
+    font-size: 14px;
+    color: #727271;
+    letter-spacing: 0.2px;
+}
+/* .card-slider p:nth-of-type(1){
+    width: 50%;
+} */
+.card-slider div:nth-of-type(2){
+    text-align: center;
+    padding: 0px 20px;
+    font-size: 12px;
+    font-weight: 400;
+    /* line-height: 24px; */
+    color: #212529;
+}
+.card-slider .pin{
+    margin-top: -230px;
+}
+#reviews  .fa-quote-left, .fa-quote-right{
+    font-size: 32px;
+  text-align: left;
+    color: #727271;
+}
+#reviews .r-dot{
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #717171;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+#reviews  .active {
+    background-color: #360b62;
+  }
+/*----------------------------------review slider end-----------------------------------------------------------*/
+
+
+/* ---------------------------------------footer--------------------------------------------------------------- */
+#Thrivera-footer .row .col-xl-8{
+background:#f2f2f2 url(../img/footerbg.png) no-repeat;
+    background-size: cover;
+    background-position: left;
+ 
+}
+#Thrivera-footer .container{
+ width: 85%;
+ padding: 40px 0;
+}
+#Thrivera-footer h1{
+    font-size: 62px;
+    font-weight: bold;
+    margin-bottom: 30px;
+   color: #000;
+   width: 80%;
+}
+#nested-row .nested-column{
+    background-color: #f2f2f2 !important;
+}
+#Thrivera-footer h4{
+    font-size: 16px;
+    font-weight: 500;
+
+}
+#Thrivera-footer ul{
+    list-style: none;
+    line-height: 30px;
+  padding-left: 0;
+}
+#Thrivera-footer a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #717171;
+    font-size: 14px;
+}
+.contact-thrivera ul{
+    padding-left: 0;
+line-height: 30px;
+}
+.contact-thriveraa{
+    cursor: pointer;
+    text-decoration: none;
+    color: #717171;
+    font-size: 14px;
+}
+   #Thrivera-footer .row .col-xl-4{
+    background-color: #ffc20e;
+    } 
+    #Thrivera-footer label{
+        color: #717171;
+    font-size: 14px;  
+    }
+    #thrivera-subscribe .form-subscribe{
+        background-color: #fff !important;
+        width: 500px;
+        height: 450px;
+        padding: 20px 40px;
+        margin-left: -70%;
+        margin-top: 20%;
+    }
+    #thrivera-subscribe .form-subscribe input{
+        font-size: 14px;
+        color: #d2d2d2;
+        outline: 0;
+        border-width: 0 0 1px;
+        border-color: #d2d2d2;
+        border-radius: 0;
+    }
+  .req-demo{
+    margin-top: 30px;
+    background-color: #360b62;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    padding: 15px 30px;
+    border-radius: 25px;
+  }
+
+/* ----------------------------------------footer end ----------------------------------------------------------*/
+
+
+/* Responsive */
+
+@media (max-width:1190px) and (min-width:764px){
+    #reviews .row .col-xl-4{
+        padding: 10px;
+        height: auto;
+    }
+    .card-slider .pin{
+        margin-top: -80px;
+    }
+    #bigSlider{
+
+        height: auto;
+    
+    }
+    #hero-section{
+        height: auto;
+        padding: 25px 0;
+    }
+    #hero-section .hero-heading h1{
+        font-size: 42px;
+    }
+    #hero-section .hero-heading h4{
+        font-size: 24px;
+    }
+    #hero-section .hero-heading p{
+        font-size: 16px;
+    }
+    
+    #thrivera-subscribe .form-subscribe{
+         width: 90%;
+        height: auto;
+        padding: 20px 40px;
+        margin-left: 5%;
+        margin-top: -5%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #Thrivera-footer h1{
+        font-size: 42px;
+    }
+   
+}
+@media (max-width:765px) and (min-width:300px){
+    #reviews .row .col-xl-4{
+        height: auto;
+        padding: 10px;
+    }
+    .card-slider .pin{
+     margin-top: -100px;
+    }
+    #bigSlider{
+        padding: 25px 0;
+        height: auto;
+    
+    }
+    #hero-section{
+        height: auto;
+    }
+    #hero-section .hero-heading h1{
+        font-size: 42px;
+    }
+    #hero-section .hero-heading h4{
+        font-size: 24px;
+    }
+    #hero-section .hero-heading p{
+        font-size: 16px;
+    }
+    #thrivera-subscribe .form-subscribe{
+        width: 90%;
+       height: auto;
+       padding: 20px 40px;
+       margin-left: 5%;
+       margin-top: -5%;
+       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   }
+   #Thrivera-footer h1{
+    font-size: 42px;
+}
+   
+}
+@media (max-width:983px) and (min-width:300px){
+    #reviews .row .col-xl-4{
+        padding: 10px;
+        height: auto;
+    }
+    #reviews .card{
+        height: auto;
+        width: 100%;
+    
+}
+#bigSlider{
+
+    height: auto;
+
+}
+#hero-section{
+    height: auto;
+    padding: 25px 0;
+}
+#hero-section .hero-heading h1{
+    font-size: 42px;
+}
+#hero-section .hero-heading h4{
+    font-size: 24px;
+}
+#hero-section .hero-heading p{
+    font-size: 16px;
+}
+#thrivera-subscribe .form-subscribe{
+    width: 90%;
+   height: auto;
+   padding: 20px 40px;
+   margin-left: 5%;
+   margin-top: -5%;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+  #Thrivera-footer h1{
+        font-size: 42px;
+    }
+
+}
+/* Responsive end */

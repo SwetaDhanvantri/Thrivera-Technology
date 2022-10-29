@@ -4,6 +4,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- tiny slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" integrity="sha512-eMxdaSf5XW3ZW1wZCrWItO2jZ7A9FhuZfjVdztr7ZsKNOmt6TUMTQgfpNoVRyfPE5S9BC0A4suXzsGSrAOWcoQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js" integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -22,9 +26,9 @@
   </head>
   <body>
      <!-- Start Header -->
-     <header class="heardertoprightbgcls  headersticky">
+     <header class="heardertoprightbgcls headersticky ">
         <div class="container">
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg fixed-top">
                 <a class="navbar-brand" href="#">
                     <img alt="Thrivera" src="./assets/img/logo/logo-transparent.png" height="50px" width="auto">
                 </a>
@@ -88,15 +92,15 @@
     <!-- Hero section -->
     <div class="hero-section d-flex justify-content-center align-items-center row" id="hero-section">
          
-                <div class="col-xl-6 hero-heading text-right">
-                <h1>Transform</h1>
-                <h4>Your Workplace</h4>
-                <p>One-size-fits-one</p>
-                <button class="btn-schedule">Schedule Demo</button>
+                <div class="col-xl-6  cols-m-12 hero-heading text-xl-right text-center">
+                    <h1>Transform</h1>
+                    <h4>Your Workplace</h4>
+                    <p>One-size-fits-one</p>
+                    <button class="btn-schedule">Schedule Demo</button>
                 </div>
                 <div class="col-xl-6"></div>
                 
-          
+        
           
       
     </div>
@@ -104,12 +108,99 @@
 
     <!--slick section-->
    
+    <!--tiny slider-->
+    <section id="slider">
+        <div class="container">
+           <div class="subcontainer"> 
+               
+                <div class="my-slider ">
+                    <div>
+                        <div class="slide">
+                            <div class="slide-img img1">
+    
+                            </div>
+                            <!-- <h3>Slide 1</h3>
+                            <p>This is slide 1</p> -->
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide">
+                            <div class="slide-img img2">
+    
+                            </div>
+                            <!-- <h3>Slide 2</h3>
+                            <p>This is slide 2</p> -->
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide">
+                            <div class="slide-img img3">
+    
+                            </div>
+                            <!-- <h3>Slide 3</h3>
+                            <p>This is slide 3</p> -->
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide">
+                            <div class="slide-img img4">
+    
+                            </div>
+                            <!-- <h3>Slide 4</h3>
+                            <p>This is slide 4</p> -->
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide">
+                            <div class="slide-img img5">
+    
+                            </div>
+                            <!-- <h3>Slide 5</h3>
+                            <p>This is slide 5</p> -->
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide">
+                            <div class="slide-img img6">
+    
+                            </div>
+                            <!-- <h3>Slide 6</h3>
+                            <p>This is slide 6</p> -->
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide">
+                            <div class="slide-img img7">
+    
+                            </div>
+                            <!-- <h3>Slide 7</h3>
+                            <p>This is slide 7</p> -->
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide">
+                            <div class="slide-img img8">
+    
+                            </div>
+                            <!-- <h3>Slide 8</h3>
+                            <p>This is slide 8</p> -->
+                        </div>
+                    </div>
+    
+                </div>
+             </div>
+    
+        </div>
+        
+       </section>
+    
+    <!--tiny slider end-->
     <!--slick section end-->
-
+    
     <!--collab section-->
     <section class="collab" id="collab">
-        <div class="container">
-            <div class="row  text-center" >
+        <div class="container ">
+            <div class="row text-center" >
                 <div class="col-xl-4 col-md-4 col-sm-12">
                     <div class="">
                         <img src="./assets/img/enable.jpg" alt="Enable" height="250px" width="auto">
@@ -119,7 +210,7 @@
                         and Organizational Success with our Hire-to-Retain offerings.
 
                     </h3>
-                    <a href="#">Learn More <span><i class="fa-solid fa-angle-right"></i></span></a>
+                    <div class="pt-4"> <a href="#" >Learn More <span><i class="fa-solid fa-angle-right"></i></span></a></div>
                 </div>
                 <div class="col-xl-4 col-md-4 col-sm-12">
                     <div class="">
@@ -150,60 +241,67 @@
     <div id="bigSlider">
         <div class="slideshow-container">
 
-            <div class="mySlides fade">
+            <div class="mySlides ">
              <div class="row">
-                <div class="col-xl-6 col-md-6">
-                    <h4>Thrivera Technologies - OneSource Marketing Solution</h4>
-                    <h1>Everything you need to run HR</h1>
-                    <p>Thrivera Hire to Retain Solution begins even before you hire anyone and
-                         goes well beyond their tenure at your organization. 
-                         Thrivera helps you to digitize and digitalize your employees'
-                         journey and provide you actionable insights to better employee productivity and retention.</p>
+                <div class="col-xl-5 col-md-5">
+                    <div class="container box1">
+                        <h4>Thrivera Technologies</h4>
+                        <h1>Everything you need to run HR</h1>
+                        <p>Thrivera Hire to Retain Solution begins even before you hire anyone and
+                            goes well beyond their tenure at your organization. 
+                            Thrivera helps you to digitize and digitalize your employees'
+                            journey and provide you actionable insights to better employee productivity and retention.
+                        </p>
+                        <div class="mt-5"><a href="#">Learn More <span><i class="fa-solid fa-angle-right"></i></span></a></div> 
+                    </div>
+                    
                 </div>
-                <div class="col-xl-6 col-md-6">
-                    <img src="#" alt="">
+                <div class="col-xl-7 col-md-7 d-flex justify-content-end">
+                    <img src="https://www.hono.ai/public/images/h2rs1.jpg" alt="">
 
                 </div>
              </div>
             </div>
             
-            <div class="mySlides fade">
+            <div class="mySlides ">
                 <div class="row">
-                    <div class="col-xl-6 col-md-6">
-                       
-                       
-                    
-                        HR to simplify the entire Workforce Life Cycle and Organizations to drive positive change
-                        <h4> Thrivera Enables</h4>
-                        <ul>
-                            <li> Employees to balance their work-life</li>
-                            <li> Team Managers to optimize business outcomes</li>
-                        </ul>
-                        <h1>Everything you need to run HR</h1>
-                        <p>Thrivera Hire to Retain Solution begins even before you hire anyone and
-                             goes well beyond their tenure at your organization. 
-                             Thrivera helps you to digitize and digitalize your employees'
-                             journey and provide you actionable insights to better employee productivity and retention.</p>
+                    <div class="col-xl-5 col-md-5">
+                        <div class="container">
+                            <h4>Thrivera Technologies</h4>
+                            <h1>Everything you need to run HR</h1>
+                            <p>Thrivera Hire to Retain Solution begins even before you hire anyone and
+                                goes well beyond their tenure at your organization. 
+                                Thrivera helps you to digitize and digitalize your employees'
+                                journey and provide you actionable insights to better employee productivity and retention.
+                            </p>
+                            <div class="mt-5"><a href="#">Learn More <span><i class="fa-solid fa-angle-right"></i></span></a></div> 
+                        </div>
+                        
                     </div>
-                    <div class="col-xl-6 col-md-6">
-                        <img src="#" alt="">
+                    <div class="col-xl-7 col-md-7 d-flex justify-content-end">
+                        <img src="https://www.hono.ai/public/images/h2rs1.jpg" alt="">
     
                     </div>
                  </div>
             </div>
             
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <div class="row">
-                    <div class="col-xl-6 col-md-6">
-                        <h4>Thrivera Technologies - OneSource Marketing Solution</h4>
-                        <h1>Everything you need to run HR</h1>
-                        <p>Thrivera Hire to Retain Solution begins even before you hire anyone and
-                             goes well beyond their tenure at your organization. 
-                             Thrivera helps you to digitize and digitalize your employees'
-                             journey and provide you actionable insights to better employee productivity and retention.</p>
+                    <div class="col-xl-5 col-md-5">
+                        <div class="container">
+                            <h4>Thrivera Technologies</h4>
+                            <h1>Everything you need to run HR</h1>
+                            <p>Thrivera Hire to Retain Solution begins even before you hire anyone and
+                                goes well beyond their tenure at your organization. 
+                                Thrivera helps you to digitize and digitalize your employees'
+                                journey and provide you actionable insights to better employee productivity and retention.
+                            </p>
+                            <div class="mt-5"><a href="#">Learn More <span><i class="fa-solid fa-angle-right"></i></span></a></div> 
+                        </div>
+                        
                     </div>
-                    <div class="col-xl-6 col-md-6">
-                        <img src="#" alt="">
+                    <div class="col-xl-7 col-md-7 d-flex justify-content-end">
+                        <img src="https://www.hono.ai/public/images/h2rs1.jpg" class="img-fluid" alt="Responsive image">
     
                     </div>
                  </div>
@@ -220,6 +318,285 @@
     </div>
     <!--slider section end-->
 
+
+    <!--framework section-->
+    <section id="framework">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-md-5 d-flex flex-column justify-content-center">
+                    <h1>Decoding the moments of truth framework</h1>
+                    <p>There are certain moments in employee life which are far more precious and of high 
+                        impact when compared to others. Thrivera uses deep learning AI in Moments of Truth to dig deep inside them, 
+                        providing evidence based, actionable insights and enabling a purpose led culture.</p>
+                </div>
+                <div class="col-xl-7 col-md-7 d-flex justify-content-end">
+                    <div class="grid-box">                    
+                        <div class=" Grid_square"></div>
+                        <div class="text-center">
+                            <p>EX in the MOT Framework refers to Employee Experience </p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+  
+     <!--framework section end-->
+       
+     <!--Integration start-->
+     <section id="integration" class="integration">
+        <div class="container text-center py-2">
+            <h1>Powerful Integrations to make your work life simpler...</h1>
+            <h4>Thrivera plays well with other tools that you might need to make your workflow easier and efficient. Thrivera is a powerful tool which uses latest technology to provide you with the best HR solutions</h4>
+          
+
+            <div class="integrationiconcls">
+                <div class="integrationiconinnerrowcls clearfix">
+                    <span><img src="./assets/img/integrationicon1.png"></span>
+                    <span><img src="./assets/img/integrationicon2.png"></span>
+                    <span><img src="./assets/img/integrationicon3.png"></span>
+                    <span><img src="./assets/img/integrationicon4.png"></span>
+                    <span><img src="./assets/img/integrationicon5.png"></span>
+                </div>
+                <div class="integrationiconinnerrowcls clearfix">
+                    <span><img src="./assets/img/integrationicon6.png"></span>
+                    <span><img src="./assets/img/integrationicon7.png"></span>
+                    <span><img src="./assets/img/integrationicon8.png"></span>
+                    <span><img src="./assets/img/integrationicon9.png"></span>
+                </div>
+                <div class="integrationiconinnerrowcls clearfix">
+                    <span><img src="./assets/img/integrationicon10.png"></span>
+                    <span><img src="./assets/img/integrationicon11.png"></span>
+                    <span><img src="./assets/img/integrationicon12.png"></span>
+                </div>
+            </div>
+        </div>
+
+     </section>
+      <!--Integration start end-->
+      <!--client review slider-->
+      <section id="reviews" class="d-flex justify-content-center align-items-center mt-5">
+        <div>
+        <div class="container text-center">
+         <div class="slide-review ">
+            <div class="card">
+                <div class="row card-slider">
+                    <div class="col-xl-4 review-box d-flex justify-content-center align-items-center">
+                        <span class="pin"><img src="./assets/img/clipnew.png" alt=""></span>
+                        <div class="d-flex justify-content-center">
+                            <p>Here is what our clients have to say about us!</p>
+                        </div>
+                       
+                       
+                    </div>
+                    <div class="col-xl-8 d-flex flex-column justify-content-center  ">
+                     
+                      
+                        <div class="d-flex justify-content-start "><i class="fa fa-quote-left"></i></div>
+                        <p class="px-4"> At Spencer's Retail, it was absolutely critical to have on board the Right HRMS
+                                partner in both our digital and employee experience journey.
+                                After due diligence we selected Thrivera as our partner of choice because of their integrated product 
+                                offering, 
+                                which would empower and engage our workforce. 
+                                  They were committed to our mission of driving an excellent employee
+                                experience as much as we were….hope we continue to get excellent support 
+                                as usual. <br/>
+                                
+                            </p>
+                            <div class="d-flex justify-content-end"><i class="fa fa-quote-right" aria-hidden="true"></i></div>
+                            <h5><span>Reema Yadav - </span> CEO XYZ Retail</h5>
+                      
+                        </div>
+                    
+                </div>
+                
+            </div>
+           
+        </div>
+       <div class="slide-review ">
+            <div class="card">
+                <div class="row card-slider">
+                    <div class="col-xl-4 review-box d-flex justify-content-center align-items-center">
+                        <span class="pin"><img src="./assets/img/clipnew.png" alt=""></span>
+                        <div class="d-flex justify-content-center">
+                            <p>Here is what our clients have to say about us!</p>
+                        </div>
+                       
+                       
+                    </div>
+                    <div class="col-xl-8 d-flex flex-column justify-content-center ">
+                     
+                      <div class="d-flex justify-content-start "><i class="fa fa-quote-left"></i></div>
+                         <p class="px-4">Thrivera has transformed the way we work. 
+                            We now have an end to end integrated HR value delivery system. 
+                            This gives us end to end visibility and control of our HR operations. 
+                            HR processes are delivered at fingertips and our employees feel empowered.
+                             I am personally very excited about the possibilities that Thrivera has unlocked for us.
+                            </p>
+                             <div class="d-flex justify-content-end"><i class="fa fa-quote-right" aria-hidden="true"></i></div>
+                            <h5><span>James Kalvin- </span> CHRO JK Group</h5>
+                      
+                        </div>
+                    
+                </div> 
+            </div>
+           
+         </div>
+         <div class="slide-review ">
+            <div class="card">
+                <div class="row card-slider">
+                    <div class="col-xl-4 review-box d-flex justify-content-center align-items-center">
+                        <span class="pin"><img src="./assets/img/clipnew.png" alt=""></span>
+                        <div class="d-flex justify-content-center">
+                            <p>Here is what our clients have to say about us!</p>
+                        </div>
+                       
+                       
+                    </div>
+                    <div class="col-xl-8 d-flex flex-column justify-content-center ">
+                     
+                      <div class="d-flex justify-content-start p-0"><i class="fa fa-quote-left"></i></div>
+                         <p class="px-4">We were working on an older technology
+                             platform and were not able to make dynamic data-backed decisions. 
+                            With different data fragmented at different sites, things were manual there were chances of error.
+                             A lot of time was typically needed to collate any manpower data, say exits, joining,
+                              payroll or leave data, So, we had a challenge with controls. With Thrivera, 
+                              the HR team is not busy collating data but are taking action on real time insights. 
+                              That's why I like Thrivera, puts you right in the driver's seat!
+
+                            </p>
+                             <div class="d-flex justify-content-end p-0"><i class="fa fa-quote-right" aria-hidden="true"></i></div>
+                            <h5><span>Ashok Bhati - </span>  RVS Sales</h5>
+                      
+                        </div>
+                    
+                </div>
+            </div>
+          
+         </div> 
+        </div>
+        <div style="text-align:center" class="mb-4">
+            <span class="r-dot"></span> 
+            <span class="r-dot"></span> 
+            <span class="r-dot"></span> 
+          </div>
+        </div>
+      </section>
+      <!--client review slider end-->
+
+      <!--footer start-->
+  <section id="Thrivera-footer" class="my-4">
+    <div class="row">
+        <div class="col-xl-8 col-sm-12 col-md-12 d-flex  " id="inner-row">
+           
+                <div class="container">
+                    <div class="col-xl-6 col-xl-12 col-md-12 col-sm-12">
+                    
+                   
+                    <div class="row" id="nested-row">
+                        <div class="col-xl-12 col-md-12 col-sm-12">
+                            <div class="heading-footer">
+                              <h1 class="">Let’s get in touch</h1>
+                            </div>
+                       </div>
+                        <div class="col-sm-6 col-xl-4 col-md-6 nested-column">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Products & Services</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#"> Privacy Policy</a></li>
+                                <li><a href="#">Thrivera in News</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-xl-8 contact-thrivera">
+                            <h4>Contact</h4>
+                            <ul>
+                              <li><a href="#">+91- 9890989098</a></li>
+                              <li><a href="#">contact@thrivera.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6"></div>
+            </div>
+            
+         
+        </div>
+        <div class="col-xl-4 col-sm-12 col-md-12 thrivera-subscribe" id="thrivera-subscribe">
+            
+            <div class="form-subscribe" id="form-subscribe">
+               
+                <form action="">
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+                       <input  class="form-control" type="text" placeholder="Mobile No.">
+                    </div>
+                    <div class="form-group">
+                        <input  class="form-control" type="text" placeholder="Email Address">
+                     </div>
+                     <div class="form-group">
+                        <input  class="form-control" type="text" placeholder="Organisation Name">
+                     </div>
+                    
+                        <div class="form-group">
+                            <label for="formControlRange">Organisation Size</label>
+                            <input type="range" class="form-control-range" id="formControlRange" onInput="$('#rangeval').html($(this).val())">
+                            <span id="rangeval">0<!-- Default value --></span>
+                          </div>
+                   
+                     <!-- <div class="form-group">
+                        <div class="g-recaptcha" data-sitekey=" " data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                        <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                     <div class="help-block with-errors"></div>
+                    </div> -->
+                    <div class="">
+                        <button class="req-demo">Request Demo</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </section>
+      <!--footer end-->
+
+   <script>
+   
+
+/*tiny slider */
+let slider = tns({
+  container : ".my-slider",
+  "slideBy" : "1",
+  "speed": 100,
+  "nav" : false,
+  autoplay : true,
+  controls: false,
+  autoplayButtonOutput:false,
+   responsive: {
+      1200:{
+          items: 5,
+          gutter: 40  
+      },
+      1013:{
+          items: 4,
+          gutter: 20  
+      },
+      680:{
+          items: 3,
+          gutter: 20  
+      },
+     
+   }
+
+})
+/* tiny slider*/
+   </script>
     <!--assets-->
     <script src="./assets/js/index.js"></script>
    
@@ -234,12 +611,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+    
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-    -->
-
+   
+   <!--Recaptcha-->
+   <script src='https://www.google.com/recaptcha/api.js'></script>
    
   </body>
 </html>
