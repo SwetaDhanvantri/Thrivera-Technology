@@ -20,6 +20,36 @@
  }
  
  /* big slider end */
+ 
+/*tiny slider */
+let slider = tns({
+  container : ".my-slider",
+  "slideBy" : "1",
+  "speed": 100,
+  "nav" : false,
+  autoplay : true,
+  controls: false,
+  autoplayButtonOutput:false,
+   responsive: {
+      1200:{
+          items: 5,
+          gutter: 40  
+      },
+      1013:{
+          items: 4,
+          gutter: 20  
+      },
+      680:{
+          items: 3,
+          gutter: 20  
+      },
+     
+   }
+
+})
+/* tiny slider*/
+
+   
  /*slide review */
  let reviewSlideIndex = 0;
  reviewSlides();
@@ -48,3 +78,5 @@
     
 });
 /* range slider end */
+
+   

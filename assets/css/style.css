@@ -1,9 +1,18 @@
 html, body{
     overflow-x: hidden;
-  
+    scroll-behavior: smooth;
+    
+}
+/* .hide-scroll{
+    overflow: scroll;
+    scrollbar-width: 700px;
 }
 
-
+.hide-scroll::-webkit-scrollbar {
+    background: transparent; 
+    width: 0px;
+} 
+*/
 header .heardertoprightbgcls{
     padding: 0 40px;
     color:#360b62;
@@ -18,9 +27,11 @@ header .heardertoprightbgcls{
     -moz-box-shadow: 2px 3px 19px 3px rgba(0,0,0,.05);
 }
 
-header .heardertoprightbgcls .container{
-  width: 80%;
-}
+/* .heardertoprightbgcls .container{
+  width: 70%;
+  margin-top: 20%;
+  
+} */
 header .heardertoprightbgcls nav.navbar{
     padding: 0 !important;
 }
@@ -53,6 +64,10 @@ header.heardertoprightbgcls .headersticky{
     text-align:center;
     margin:0 0 0 22px;
     color:#360b62;
+}
+#schedule-btn a:hover{
+    background-color: #360b62;
+    color: #fff;
 }
 a .headerscheduledemobtncls .headerscheduledemoshowbtncls{
     display:block;
@@ -92,7 +107,7 @@ header nav{
     box-shadow: 2px 3px 19px 3px rgb(0 0 0 / 5%);
     -webkit-box-shadow: 2px 3px 19px 3px rgb(0 0 0 / 5%);
     -moz-box-shadow: 2px 3px 19px 3px rgba(0,0,0,.05);
-    padding: 10px 60px !important;
+    padding: 0px 80px !important;
     background-color: #fff;
 }
 header.heardertoprightbgcls .navbar-toggler{
@@ -157,7 +172,7 @@ header.heardertoprightbgcls .navbar-toggler .navbar-toggler-icon{
 #hero-section{
     position: relative;
        text-align: right;
-        background: linear-gradient(to bottom,rgba(104,220,168,.3),rgba(104,220,168,1)), url(../img/bg-header1.jpg) no-repeat;
+        background: linear-gradient(to bottom,rgba(104,220,168,.3),rgba(104,220,168,1)), url(../img/Index/bg-header1.jpg) no-repeat;
          background-size:100%;
          height:70vh;
          background-size:cover;
@@ -203,7 +218,7 @@ header.heardertoprightbgcls .navbar-toggler .navbar-toggler-icon{
 
 /* collab section */
 #collab{
-    background-image: url(../img/foundationtoolkitbg.png);
+    background-image: url(../img/Index/foundationtoolkitbg.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 40px 0 40px 0;
@@ -241,7 +256,7 @@ header.heardertoprightbgcls .navbar-toggler .navbar-toggler-icon{
 #bigSlider{
     padding-top: 50px;
     width: 100%;
-    background-image: url(../img/foundationtoolkitbg.png);
+    background-image: url(../img/Index/foundationtoolkitbg.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
@@ -338,7 +353,7 @@ body {font-family: Verdana, sans-serif;}
 /* tiny slider*/
 #slider{
     width: 100%;
-    padding:20px 0;
+    padding:10px 0;
     display: flex;
      justify-content:center; 
   
@@ -354,41 +369,25 @@ width: 100%;
 }
 .slide-img{
 width: 100%;
-height: 80px;
-border-radius: 5px;
+height: auto;
+
+border-right: 1px solid #d4d3d3;
+
 background-position: center;
 background-size: cover;
 display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.img1{
-background-image: url(https://img.freepik.com/free-psd/instagram-white-mobile-phone-mockup-with-3d-icons_106244-1787.jpg?w=1060&t=st=1666773896~exp=1666774496~hmac=d8ed8ae1cb615a01770a0114b220c6a161ed9c53c231b70af68d8302e9af24ad);
-}
-.img2{
-background-image: url(https://img.freepik.com/free-psd/instagram-rose-gold-mobile-phone-mockup_106244-1525.jpg?w=1060&t=st=1666773929~exp=1666774529~hmac=89002e3a65a9035798a9373499fcb3c23739c761fd81cc6230b89e0287f5be6c);
-}
-.img3{
-background-image: url( https://img.freepik.com/free-psd/reminder-3d-design-mockup-template_106244-1902.jpg?t=st=1666765001~exp=1666765601~hmac=28aeda8e0cd365b0e47d81d493272466d735f849dd6e5f01f3975e0be6b067fc);
-}
-.img4{
-background-image: url(  https://img.freepik.com/free-psd/social-media-post-mockup-with-back-school-concept_23-2148082630.jpg?w=996&t=st=1666774186~exp=1666774786~hmac=d254f2fda8df3d09ff43cd7f3d936c94bf8a7b585f646fc0edc9516f2f79c9cd);
-}
-.img5{
-background-image: url(https://img.freepik.com/free-psd/city-sign-design-mockup_23-2149061482.jpg?w=1060&t=st=1666774370~exp=1666774970~hmac=04f162da036b189666e01a6707d0a8cc8cd61dbe6b5f1ee34e9134297cd9f65e);
-}
-.img6{
-background-image: url( https://img.freepik.com/free-psd/city-sign-design-mockup_23-2149061500.jpg?w=1060&t=st=1666774401~exp=1666775001~hmac=36d7cb5414de005f431c4634993a8b08e48812c9d82fe06eab120fe8c1a5e2e1);
-}
-.img7{
-background-image: url(https://img.freepik.com/free-vector/creative-coming-soon-teaser-background_23-2148894969.jpg?w=1060&t=st=1666774427~exp=1666775027~hmac=c11fd8646d189b763889f46f05c14b5bf11510ea75bd4b2c3aaf67657ad8d1d3);
-}
-.img8{
-background-image: url( https://img.freepik.com/free-photo/education-day-arrangement-table-with-copy-space_23-2148721266.jpg?w=1380&t=st=1666774447~exp=1666775047~hmac=8fa1374aa06d2a70f59469940fd3161397f186e0753ee0e0b2561a7d31cb3835);
+.slide-img img{
+    width: 60%;
+height: auto;
+
 }
 
+
 @media (max-width: 1600px){
-.container{
+    #slider .container{
     width:100%;
 }
 }
@@ -398,7 +397,7 @@ background-image: url( https://img.freepik.com/free-photo/education-day-arrangem
 #framework{
     background-color: #000627;
     padding: 40px 0 10px 0;
-    background-image: url(../img/bg-newmoi.png);
+    background-image: url(../img/Index/bg-newmoi.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -407,7 +406,7 @@ background-image: url( https://img.freepik.com/free-photo/education-day-arrangem
 
 
 #framework .Grid_square {
-    background: url(../img/square-grid_bg.png);
+    background: url(../img/Index/square-grid_bg.png);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -444,7 +443,7 @@ background-image: url( https://img.freepik.com/free-photo/education-day-arrangem
 /* framework end */
 /* integration */
 .integration{
-    background-image: url(../img/foundationtoolkitbg.png);
+    background-image: url(../img/Index/foundationtoolkitbg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -520,7 +519,7 @@ background-image: url( https://img.freepik.com/free-photo/education-day-arrangem
 
 /* review slider*/
 #reviews{
-    background-image: url(../img/foundationtoolkitbg.png);
+    background-image: url(../img/Index/foundationtoolkitbg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -690,6 +689,330 @@ line-height: 30px;
 
 /* ----------------------------------------footer end ----------------------------------------------------------*/
 
+/*-----------------About section---------------------------------------------------------------------*/
+
+#about-hero img{
+    height: 480px;
+    width: auto;
+   }
+   #about-hero h5{
+    text-transform: uppercase;
+   }
+   #about-hero h1{
+   color: #360b62;
+   font-weight: 600;
+   }
+   #about-hero p{
+    color: #727271;
+    font-weight: 500;
+    width: 80%;
+    }
+    #about-hero .about-hero{
+        width: 88%;
+        padding: 30px 0;
+    }
+   #explorebtn a{
+        width:162px;
+        height:42px;
+        border:1px solid #360b62;
+        font-size:14px;
+        text-decoration: none;
+        border-radius:25px;
+        display:inline-block;
+        text-align:center;
+        
+        color:#360b62;
+    }
+    #explorebtn a:hover{
+        background-color: #360b62;
+        color: #fff;
+    }
+
+/*about why what section */
+
+#why-what img{
+    height: 370px;
+    width: auto;
+   }
+   #why-what .why-what{
+     width: 88%;
+     padding: 30px 0;
+   }
+   #why-what h1{
+    color: #360b62;
+    font-weight: 600;
+    }
+    #why-what p{
+     color: #727271;
+     font-weight: 500;
+     width: 80%;
+     }
+/*about why what section end */
+
+/*partner-organisation start */
+#partner-organisation h3{
+    color: #000;
+    font-weight: 500;
+     width: 70%;
+    margin-bottom: 20px;
+    line-height: 1.35;
+}
+/* .orgSlide {display: none;} */
+.organisationSlider{
+  position: relative;
+   margin: auto;
+ 
+}
+ .dot-org {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #717171;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #360b62;
+  }
+  .orgSlide img{
+    width: 120px;
+    height: auto;
+  }
+/*partner-organisation end */
+    
+/*-----------------About section end---------------------------------------------------------------------*/
+/*-----team------------*/
+#Team-hero{
+   height: 570px;
+   }
+   #Team-hero .Team-hero{
+     width: 80%;
+   }
+   #Team-hero .Team-hero h1{
+     color: #360b62;
+     font-weight: 700px;
+  }
+
+  #Team-hero .team{
+    border-radius: 50%;
+    height: 200px;
+    border: 5px solid #ff9201;
+    width: 200px;
+  }
+  #Team-hero h1{
+    font-size: 72px;
+    font-weight: 700;
+    
+
+  }
+  #Team-hero h1 span{
+    color: #ff9201;
+  }
+ 
+  #Team-hero p{
+    width: 60%;
+    color: #717171;
+    font-size: 14px;
+  }
+  .team1{
+    background:#f2f2f2 url(../img/Team//team3\ \(1\).jpg) no-repeat;
+    background-size: contain;
+  }
+  .team2{
+    background:#f2f2f2 url(../img/Team/team3\ \(2\).jpg) no-repeat;
+    background-size: contain;
+  }
+  .team3{
+    background:#f2f2f2 url(../img/Team/team3\ \(3\).jpg) no-repeat;
+    background-size: contain;
+  }
+  .team4{
+    background:#f2f2f2 url(../img/Team/team4.jpg) no-repeat;
+    background-size: contain;
+  }
+  #team-culture{
+    height: 500px;
+  }
+  #team-culture .team-culture{
+    width: 88%;
+    height: 500px;
+  }
+  #team-culture h1{
+    font-size: 62px;
+    color: #360b62;
+    font-weight: 700;
+  }
+  #team-culture p{
+    width: 90%;
+    line-height: 28px;
+    color: #717171;
+  }
+  #team-culture .img-culture{
+    background:url(../img/Team/team-meeting-online-conference-call.jpg) no-repeat;
+    background-size: cover;
+    height: 400px;
+    
+  }
+
+  #Team-leadership{
+    height: 450px;
+   
+  }
+  #Team-leadership h1{
+    color: #360b62;
+    font-weight: 600;
+  }
+  .teamSlider{
+   margin: 40px 0;
+  position: relative;
+
+  }
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+.dot{
+   background-color: #717171;
+  }
+ .active{
+  background-color: #360b62;
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #360b62;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .team-memeber{
+    height: 150px;
+    width: 150px;
+    border: 3px solid white;
+    
+  }
+  .member-detail{
+   width: 180px;
+   height: 50px;
+   margin-top: -40px;
+   text-align: center;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #fff;
+  }
+  .member-name{
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .member-position{
+    color:#191970;
+    font-size: 12px;
+    font-weight:normal;
+  }
+  .member-1{
+    background:url(../img/Team/team3\ \(1\).jpg) no-repeat;
+    background-size: cover;
+  }
+  .member-2{
+    background:url(../img/Team/team3\ \(2\).jpg) no-repeat;
+    background-size: cover;
+  }
+  .member-3{
+    background:url(../img/Team/team3\ \(3\).jpg) no-repeat;
+    background-size: cover;
+  }
+  .member-4{
+    background:url(../img/Team/team4.jpg) no-repeat;
+    background-size: cover;
+  }
+   .frame{
+    height: 200px;
+    background-color: #78c8a1;
+    padding: 20px 30px 0 30px;
+  }
+  #team-join{
+    background-color: #f2f2f2;
+  }
+ #team-join .team-join{
+    width: 90%;
+ } 
+  #team-join .row{
+    height: 400px;
+  }
+  #team-join .joincolumn1{
+    background-color: #573f75;
+    color: #fff;
+  }
+  #team-join h2{
+    color: #12c3f4;
+    font-size: 26px;
+    font-weight: 600;
+  }
+  #team-join h1{
+    font-size: 32px; 
+    font-weight: 600;
+  }
+  #team-join  .joincolumn2{
+    background-color: #f2f2f2;
+  }
+  #team-join p{
+    line-height: 26px;
+    font-size: 14px;
+    color: #333;
+  }
+  #team-join  .joincolumn3{
+    margin-top: -30px;
+    background-color: #fff;
+    height: 460px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  #team-join  label{
+    color: #717171;
+font-size: 14px;  
+}
+#team-join  .form-subscribe{
+    padding: 30px 0;
+    margin: 20px 0;
+}
+
+#team-join  .form-subscribe input{
+    font-size: 14px;
+    color: #d2d2d2;
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: #d2d2d2;
+    border-radius: 0;
+}
+/*----team end ------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive */
 
@@ -731,6 +1054,9 @@ line-height: 30px;
     #Thrivera-footer h1{
         font-size: 42px;
     }
+    #Team-hero{
+        height: auto;
+        }
    
 }
 @media (max-width:765px) and (min-width:300px){
@@ -769,6 +1095,9 @@ line-height: 30px;
    #Thrivera-footer h1{
     font-size: 42px;
 }
+#Team-hero{
+    height: auto;
+    }
    
 }
 @media (max-width:983px) and (min-width:300px){
@@ -810,6 +1139,9 @@ line-height: 30px;
   #Thrivera-footer h1{
         font-size: 42px;
     }
+    #Team-hero{
+        height: auto;
+        }
 
 }
 /* Responsive end */
