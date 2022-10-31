@@ -996,6 +996,16 @@ font-size: 14px;
     border-color: #d2d2d2;
     border-radius: 0;
 }
+#team-join .upload-resume{
+    margin-top: 30px;
+    background-color: #573f75;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 45px;
+
+}
 /*----team end ------------*/
 
 
