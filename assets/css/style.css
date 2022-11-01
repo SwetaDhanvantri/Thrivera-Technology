@@ -1,8 +1,9 @@
 html, body{
     overflow-x: hidden;
-    scroll-behavior: smooth;
+    height: 100%
     
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 /* .hide-scroll{
     overflow: scroll;
     scrollbar-width: 700px;
@@ -19,8 +20,10 @@ header .heardertoprightbgcls{
     width:100%;
     background:#fff;
    position: fixed;
+  
     left:0;
     top:0;
+    font-family: 'Roboto', sans-serif;
     z-index:99999999!important;
     box-shadow: 2px 3px 19px 3px rgb(0 0 0 / 5%);
     -webkit-box-shadow: 2px 3px 19px 3px rgb(0 0 0 / 5%);
@@ -34,6 +37,7 @@ header .heardertoprightbgcls{
 } */
 header .heardertoprightbgcls nav.navbar{
     padding: 0 !important;
+    
 }
 
 
@@ -42,6 +46,7 @@ header .navbar-nav .nav-link{
     font-size:14px;
     font-weight:500;
     color:#360b62;
+    font-family: 'Roboto', sans-serif;
 
 }
 header .navbar-nav li.nav-item{
@@ -690,11 +695,11 @@ line-height: 30px;
 /* ----------------------------------------footer end ----------------------------------------------------------*/
 
 /*-----------------About section---------------------------------------------------------------------*/
-
+/* 
 #about-hero img{
     height: 480px;
     width: auto;
-   }
+   } */
    #about-hero h5{
     text-transform: uppercase;
    }
@@ -1010,6 +1015,53 @@ font-size: 14px;
 
 
 
+/*----Enable start ------------*/
+#enable-hero .enable-hero{
+    width: 90%;
+    padding: 20px 0;
+}
+#enable-hero .enable-hero a{
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 15px 25px 15px 10px;
+    background-color: #360b62;
+}
+#enable-hero .enable-hero h1{
+    color: #360b62;
+    font-weight: 600;
+    font-size: 58px;
+}
+#enable-hero .enable-hero p{
+    color: #717171;
+    font-size: 16px;
+    line-height: 28px;
+}
+#enable-hero .enable-hero a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #fff;
+    color: #360b62;
+    border: 3px solid #360b62;
+}
+#enable-hero .enable-hero span{
+    border-radius: 50%;
+    background-color: #fff;
+    padding:4px 10px;
+    color: #360b62;
+}
+#enable-hero .enable-hero a:hover span{
+    text-decoration: none;
+    background-color:#360b62;
+    color: #fff;
+    border: 3px solid #360b62;
+}
+
+
+/*collapse */
+
+/*----Enable end ------------*/
+
 
 
 
@@ -1067,7 +1119,10 @@ font-size: 14px;
     #Team-hero{
         height: auto;
         }
-   
+       
+        header nav{
+            padding: 0px !important;
+        }
 }
 @media (max-width:765px) and (min-width:300px){
     #reviews .row .col-xl-4{
@@ -1082,6 +1137,7 @@ font-size: 14px;
         height: auto;
     
     }
+
     #hero-section{
         height: auto;
     }
@@ -1108,7 +1164,23 @@ font-size: 14px;
 #Team-hero{
     height: auto;
     }
-   
+    header nav{
+        padding: 0px !important;
+    }
+    #reviews .card-slider{
+        margin: 0;
+    }
+    .card-slider div:nth-of-type(2){
+     
+        padding: 0px;
+      
+        /* line-height: 24px; */
+        color: #212529;
+    }
+    #why-what img{
+        height: 250px;
+        width: auto;
+       }
 }
 @media (max-width:983px) and (min-width:300px){
     #reviews .row .col-xl-4{
@@ -1119,6 +1191,9 @@ font-size: 14px;
         height: auto;
         width: 100%;
     
+}
+header nav{
+    padding: 0px !important;
 }
 #bigSlider{
 
